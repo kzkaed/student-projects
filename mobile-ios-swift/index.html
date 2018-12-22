@@ -1,0 +1,196 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="workshop-mobile.css" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700|Roboto:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+ 
+
+    <script src="workshop-mobile.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2>Women in CS Workshop at <a href="http://www.lanetech.org/">Lane Tech </a></h2>
+        <h1>Mobile Storyboarding- Intro to Creating a Mobile App with xcode</h1>
+        <h2>(and a few principles of clean code and software quality)</h2>
+        <div class="row">
+          <p>Today we will jump into Xcode and begin our storyboard</p>
+          <p>We will build a view and if time permits, a controller</p>
+          <p>We will explore components of xcode, including how to build and use the emulator</p>
+        </div>
+
+
+      </div>
+    </header>
+
+    <section id="start">
+      <div class="container">
+        <h3>Getting Started</h3>
+        <div class="row">
+          <ol>
+            <li>Open up Xcode</li>
+            <li>Create a new Xcode project</li>
+            <li>IOS Single View Application</li>
+            <li>Product Name  ""</li>
+            <li>Organization Name anything</li>
+            <li>Organization Identifier unique to you</li>
+            <li>Swift -  Historically, development for IOS happened in Objective C. It has transitioned to Swift,
+              and while xcode still supports both,
+              we will only be working in Swift.
+              All new development in xcode should be in Swift.</li>
+            <li> Universal</li>
+            <li> Pick a directory to save project</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="xcode">
+      <div class="container">
+
+        <h3>Navigating Xcode</h3>
+
+        <div class="row">
+          <h4>Navigator - Left hand Side</h4>
+          <p>The navigator shows all the project files in the app.
+             With the top bar of the navigator you can search, look at the hierarchy of the app and its funtions, or look at old builds.
+          </p>
+          </div>
+        <div class="row">
+          <h4>Utilities - Right hand Side</h4>
+         <p>The Utilities area contains, in the top part, an inspector where you can analyse and change attributes.
+          The bottom section is a palette of UI components.
+           This pallete's components will be dragged to the Main.storyborad where you will layout your design work.</p>
+        </div>
+          <div class="row">
+        <h4>Main.storyboard</h4>
+        <p>This is where we will set up our layout or design. We will use components of the UI pallette and adjust their attributes in the inspector.</p>
+          </div>
+            <div class="row">
+      <h4>ViewController.swift</h4>
+      <p>The ViewController class is where all the glue goes to make the view (UI) actionable.
+              The controller will hold the connection from the storyboard and handle what happens.
+              Each View will have at least on Controller.
+              You will notice at the top of the controller UIKit. This is the library (a group of code) that has all the UI code.
+              The controller is where we are going to drap our UI components to wire them up.
+            </p>
+            </div>
+        <div class="row">
+          <h4>Process to connect UI View to the Controller</h4>
+          <p><i><b>Click on UI component, press control button on keyboard, and drag to controller</b></i>. </p><p>We will goes through this process in detail.
+          If you were a designer and you only wanted to work on the layout of the application, bringing the connections over to the view for someone to program would be a great first step.
+          Of course, at that point, you could also code what happens. We will do some of that coding today as well.
+        </p>
+        </div>
+              <div class="row">
+      <h4>Assets.xcassets</h4>
+      <p>Xcode assests. This is where we will import the images for the project</p>
+              </div>
+
+
+        <div class="row">
+          <h4>MVC</h4>
+          <p>MVC stands for Model View Controller. It is a software design pattern.
+            It is how xcode was designed and it is enforced in the way you will build your application. </p>
+          <p>Model is what the program does that is independent of the UI. It is the data. </p>
+          <p>View is the user interface, the buttons, display, images, videos, etc that you see on the screen of the device.</p>
+          <p>Controller acts as the glue between the view and model.</p>
+          <p>The view and the model never talk to each other. The controller is the 'middleperson'.
+            The controller will ask the model for its data. The controller or one of its sub classes will handle that data to pass to the view.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Content">
+
+      <div class="container">
+        <h3>Workshop Content</h3>
+        <div class="row"><a href="code/data-structures.txt">Example Code - Data Structures</a></div>
+
+        <div class="row"><a href=https://github.com/kzkaed/profiles-project/blob/master/Profiles/ViewController.swift>Code - Profiles/ViewController.swift </a></div>
+
+        <div class="row">
+
+          <div class="column">
+          <p><img class="thumbs" src="bios/Katherine_Johnson.jpg"><br>
+            <a href="bios/KatherineJohnson.txt">Katherine Johnson</a>
+          </p></div>
+
+
+        <div class="column">
+          <p><img class="thumbs" src="bios/Margaret_Hamilton.jpg"><br>
+            <a href="bios/MargaretHamilton.txt">Margaret Hamilton</a>
+          </p>
+        </div>
+      </div>
+
+        <div class="row">
+        <div class="column">
+          <p><img class="thumbs" src="bios/Grace_Hopper.jpg"><br>
+            <a href="bios/GraceHopper.txt">Grace Hopper</a>
+          </p>
+        </div>
+
+        <div class="column">
+          <p><img class="thumbs" src="bios/Barbara_Liskov.jpg"><br>
+            <a href="bios/BarbaraLiskov.txt">Barbara Liskov</a>
+          </p>
+        </div>
+       </div>
+        <div class="row">
+        <div class="column">
+          <p><img class="thumbs" src="bios/Ellen_Ochoa.jpg"><br>
+            <a href="bios/EllenOchoa.txt">Ellen Ochoa</a>
+          </p>
+        </div>
+
+          <div class="column">
+            <p><img class="thumbs" src="bios/Latanya_Sweeney.jpg"><br>
+              <a href="bios/LatanyaSweeney.txt">Latanya Arvette Sweeney</a>
+            </p>
+          </div>
+
+         </div>
+
+        <div class="row">
+          <p><a href="https://github.com/kzkaed/profiles-project">git@github.com:kzkaed/profiles-project.git</a></p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+
+    <section id="resources">
+      <div class="container">
+
+        <h3>Resources</h3>
+        <p class="resource"><a href="https://developer.apple.com/swift/resources/">Swift and Xcode 8</a></p>
+
+        <p>&nbsp;</p>
+        <p class="resource"><a href="http://ltacademiccenter.blogspot.com/2016/01/women-in-computer-science-conference.html">Lane Tech Blog</a></p>
+        <p class="resource"><a href="https://en.wikipedia.org/wiki/Barbara_Liskov/">https://en.wikipedia.org/wiki/Barbara_Liskov</a></p>
+        <p class="resource"><a href="https://en.wikipedia.org/wiki/Grace_Hopper">https://en.wikipedia.org/wiki/Grace_Hopper</a></p>
+        <p class="resource"><a href="https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)/">https://en.wikipedia.org/wiki/Margaret_Hamilton</a></p>
+        <p class="resource"><a href="https://en.wikipedia.org/wiki/Katherine_Johnson">https://en.wikipedia.org/wiki/Katherine_Johnson</a></p>
+        <p class="resource"><a href="https://en.wikipedia.org/wiki/Latanya_Sweeney">https://en.wikipedia.org/wiki/Latanya_Sweeney</a></p>
+        <p class="resource"><a href=" https://en.wikipedia.org/wiki/Ellen_Ochoa"> https://en.wikipedia.org/wiki/Ellen_Ochoa</a></p>
+
+
+        <h3>About Us</h3>
+        <p class="resource"><a href="http://scutigera.com/">Kristin Kaeding</a></p>
+        <p class="resource"><a href="https://github.com/andarcabrera">Anda Cabrera</a></p>
+        <p class="resource"><a href="http://ericagarcia.me">Erica Garcia</a></p>
+        <p class="resource"><a href="http://calvached.github.io/">Diana Calvache</a></p>
+        <p class="resource"><a href="https://github.com/elizabethengelman">Elizabeth Engleman</a></p>
+        <p>&nbsp;</p>
+        <p class="resource"><a href="http://www.8thlight.com/">8thlight.com</a></p>
+      </div>
+    </section>
+  </body>
+</html>

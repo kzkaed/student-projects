@@ -1,0 +1,70 @@
+    let profileNames: [String:String] =
+        ["Katherine_Johnson": "Katherine Johnson",
+         "Margaret_Hamilton": "Margaret Hamilton",
+         "Grace_Hopper": "Grace Hopper",
+         "Latanya_Sweeney": "Latanya Sweeney",
+         "Barbara_Liskov": "Barbara Liskov",
+         "Ellen_Ochoa": "Ellen Ochoa"]
+
+    let profileUrls: [String:String] =
+        ["Katherine_Johnson": "https://en.wikipedia.org/wiki/Katherine_Johnson",
+         "Margaret_Hamilton": "https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)",
+         "Grace_Hopper": "https://en.wikipedia.org/wiki/Grace_Hopper",
+         "Latanya_Sweeney": "https://en.wikipedia.org/wiki/Latanya_Sweeney",
+         "Barbara_Liskov": "https://en.wikipedia.org/wiki/Barbara_Liskov",
+         "Ellen_Ochoa": "https://en.wikipedia.org/wiki/Ellen_Ochoa"]
+
+    let profiles = ["Katherine_Johnson",
+                    "Margaret_Hamilton",
+                    "Grace_Hopper",
+                    "Latanya_Sweeney",
+                    "Barbara_Liskov",
+                    "Ellen_Ochoa"]
+
+
+
+#other data structures
+
+
+let images: [UIImage] =
+    [#imageLiteral(resourceName: "Margaret_Hamilton"),
+     #imageLiteral(resourceName: "Grace_Hopper"),
+     #imageLiteral(resourceName: "Katherine_Johnson") ,
+     #imageLiteral(resourceName: "Latanya_Sweeney"),
+     #imageLiteral(resourceName: "Barbara_Liskov") ,
+     #imageLiteral(resourceName: "Ellen_Ochoa.jpg")]
+
+let profiles: [String] =
+    ["Margarat Hamilton",
+     "Grace Hopper",
+     "Katherine Johnson",
+     "Latanya Sweeny",
+     "Barbara Liskov",
+     "Ellen Ochoa"]
+
+let urls: [String] =
+    ["https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)",
+     "https://en.wikipedia.org/wiki/Grace_Hopper",
+     "https://en.wikipedia.org/wiki/Katherine_Johnson",
+     "https://en.wikipedia.org/wiki/Latanya_Sweeney",
+     "https://en.wikipedia.org/wiki/Barbara_Liskov",
+     "https://en.wikipedia.org/wiki/Ellen_Ochoa"]
+
+
+
+
+ let profilesDictionary: [String: Array<String>] =
+         ["Margarat_Hamilton":["Margaret_Hamilton","https://en.wikipedia.org/wiki/Margaret_Hamilton_(scientist)"],
+         "Grace Hopper":
+             ["Grace_Hopper","https://en.wikipedia.org/wiki/Grace_Hopper"],
+         "Katherine Johnson":
+             [#imageLiteral(resourceName: "Katherine_Johnson"), "https://en.wikipedia.org/wiki/Katherine_Johnson"],
+         "Latanya Sweeny":
+             [#imageLiteral(resourceName: "Latanya_Sweeney"), "https://en.wikipedia.org/wiki/Latanya_Sweeney"],
+         "Barbara Liskov":
+             [#imageLiteral(resourceName: "Barbara_Liskov"), "https://en.wikipedia.org/wiki/Barbara_Liskov"],
+         "Ellen Ochoa":
+             [#imageLiteral(resourceName: "Ellen_Ochoa.jpg"), "https://en.wikipedia.org/wiki/Ellen_Ochoa"]]
+
+
+
