@@ -206,14 +206,19 @@ header .container { padding: 2rem 0; }
 
 .side-nav {
   /*padding: 2em 1em 1em 1em;*/
-  position: fixed;
-  width: 20%;
+
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
   .side-nav {
     padding: 2em 1em 1em 1em;
+    position: fixed;
+      width: 20%;
   }
+
+
+
+
 }
 
 .side-nav li {
